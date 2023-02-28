@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>选择图片并识别文字</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 在 head 标签中添加样式 -->
+  </head>
+  <body>
+    <h1>选择图片并识别文字</h1>
+    <!-- 添加一个用于选择文件的 input 元素 -->
+    <input type="file" id="image" accept="image/*" />
+    <button onclick="submitImage()">提交</button>
+    <br /><br />
+    <!-- 添加一个用于预览图片的 div 元素 -->
+    <div id="image">
+        <img id="image-preview"/>
+    </div>
+    <div id="json-container">
+      <pre id="json-output"></pre>
+    </div>    
+    <script src="./js/main.js"></script>
+  </body>
+</html>
